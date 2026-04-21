@@ -8,6 +8,7 @@ app = Flask(__name__)
 
 @app.route('/<string>')
 def return_backwards_string(string):
+    # add coment
     return "".join(reversed(string))
 
 @app.route('/get-mode')
